@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+body {
+  width: 100%;
+  margin: 0;
+  background: #f1f1f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.grey-text {
+  opacity: 0.5;
+}
+
+header {
+  display: flex;
+  padding: 24px 10% 24px 10%;
+}
+
+header h3 {
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.section-welcome {
+  display: flex;
+  padding: 64px 10% 64px 10%;
+}
+
+.section-welcome h1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120px;
+}
+
+.section-news {
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
+  gap: 45px;
+}
+
+.section-news .news {
+  padding-bottom: 36px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  gap: 7%;
+}
+
+.section-news .news .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-news .news .left .top {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 48px;
+  gap: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.section-news .news .left .top .img-ava {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-news .news .left .top h5 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.section-news .news .left .text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 70px;
+  padding-right: 4%;
+}
+
+.section-news .news .left .text h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.section-news .news .left .text p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.section-news .news .left .info-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-news .news .left .info-bottom .info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-news .news .left .info-bottom .info .javascript {
+  width: 107px;
+  height: 30px;
+  padding: 6px 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(8, 30, 52, 0.12),
+      rgba(8, 30, 52, 0.12)
+    ),
+    #fffbfe;
+  border-radius: 100px;
+}
+
+.section-news .news .left .info-bottom .info .javascript #button-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #081e34;
+}
+
+.section-news .news .left .info-bottom .info h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.section-news .news .left .info-bottom .actions {
+  display: flex;
+  align-items: flex-end;
+  gap: 1%;
+}
+
+.section-news .news .left .info-bottom .actions .img-action {
+  width: 24px;
+  height: 24px;
+}
+
+.section-news .news .img-text {
+  width: 20%;
+  height: 20%;
+  border-radius: 4px;
+}
+
+footer {
+  padding: 30vh 10% 32px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+footer h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #081e34;
+  padding: 10px 12px;
+  display: inline-block;
+}
+
+a:link {
+  color: #081e34;
+}
+
+a:visited {
+  color: #081e34;
+}
+
+a:hover {
+  color: #081e34;
+}
+
+a:active {
+  color: #081e34;
 }
